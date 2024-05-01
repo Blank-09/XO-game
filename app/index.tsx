@@ -5,8 +5,20 @@ import { Link } from 'expo-router';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <Link href="/profile">Go to profile</Link>
+      <Text className="text-4xl font-bold mb-4">XO Game</Text>
+      <Text>Let's play the game of XO</Text>
+      <Link
+        href="/game"
+        className="mt-6 px-4 py-3 w-44 text-center border border-neutral-950 rounded"
+      >
+        Play
+      </Link>
+      <Link
+        href="/leaderboard"
+        className="mt-2 px-4 py-3 w-44 text-center border border-neutral-950 rounded"
+      >
+        Leaderboard
+      </Link>
       <StatusBar style="auto" />
     </View>
   );
@@ -17,6 +29,6 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
-    justifyContent: 'center',
-  },
+    justifyContent: 'center'
+  }
 });
